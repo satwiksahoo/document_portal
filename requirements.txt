@@ -1,0 +1,27 @@
+
+langchain
+python-dotenv
+langchain_groq
+langchain_google_genai
+langchain_huggingface
+sentence-transformers
+langchain-google-genai
+google-generativeai
+python-dotenv
+langchain_community
+pypdf
+faiss-cpu
+structlog
+PyMuPDF
+pandas
+streamlit
+langchain-core[tracing]
+pytest
+uvicorn==0.35.0
+python-multipart==0.0.20
+fastapi
+jinja2
+langchain-openai
+-e .
+
+
