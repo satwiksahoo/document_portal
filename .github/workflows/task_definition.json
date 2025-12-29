@@ -25,22 +25,22 @@
           "name": "ENV",
           "value": "production"
         }
-      ],
-      "secrets": [
-        {
-          "name": "OPENAI_API_KEY",
-          "valueFrom": "arn:aws:secretsmanager:ap-southeast-2:031179588605:secret:api_key_liveclass-yRxllP"
-        },
-        {
-          "name": "GOOGLE_API_KEY",
-          "valueFrom": "arn:aws:secretsmanager:ap-southeast-2:031179588605:secret:api_key_liveclass-yRxllP"
-        },
-        {
-          "name": "GROQ_API_KEY",
-          "valueFrom": "arn:aws:secretsmanager:ap-southeast-2:031179588605:secret:api_key_liveclass-yRxllP"
-        }
-        
-      ],
+      ],   
+    "secrets": [
+  {
+    "name": "OPENAI_API_KEY",
+    "valueFrom": "arn:aws:secretsmanager:ap-southeast-2:031179588605:secret:api_key_liveclass-yRxllP:OPENAI_API_KEY::"
+  },
+  {
+    "name": "GOOGLE_API_KEY",
+    "valueFrom": "arn:aws:secretsmanager:ap-southeast-2:031179588605:secret:api_key_liveclass-yRxllP:GOOGLE_API_KEY::"
+  },
+  {
+    "name": "GROQ_API_KEY",
+    "valueFrom": "arn:aws:secretsmanager:ap-southeast-2:031179588605:secret:api_key_liveclass-yRxllP:GROQ_API_KEY::"
+  }
+]
+,
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
